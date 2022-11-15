@@ -1,7 +1,7 @@
 dataset: # Required.
   type: pascal
   train:
-    data_root: /apdcephfs/share_1290796/huimin/Data/VOC/VOCdevkit/VOC2012
+    data_root: /apdcephfs/share_1290796/Data/VOC/VOCdevkit/VOC2012
     data_list: ../../../../data/splits/pascal/1323/labeled.txt
     flip: True
     GaussianBlur: False
@@ -11,7 +11,7 @@ dataset: # Required.
       type: rand
       size: [513, 513] # crop image with HxW size
   val:
-    data_root: /apdcephfs/share_1290796/huimin/Data/VOC/VOCdevkit/VOC2012
+    data_root: /apdcephfs/share_1290796/Data/VOC/VOCdevkit/VOC2012
     data_list: ../../../../data/splits/pascal/val.txt
     crop:
       type: center
@@ -53,14 +53,14 @@ net: # Required.
   sync_bn: True
   ema_decay: 0.99
   encoder:
-    type: u2pl.models_cnn_trans_light.resnet_pvt_fourier.resnet101
+    type: u2pl.model_cnn_trans.resnet_pvt_fourier.resnet101
     kwargs:
       multi_grid: True
       zero_init_residual: True
       fpn: True
       replace_stride_with_dilation: [False, False, True]  #layer0...1 is fixed, layer2...4
   decoder:
-    type: u2pl.models_cnn_trans_light.decoder.dec_deeplabv3_plus
+    type: u2pl.model_cnn_trans.decoder.dec_deeplabv3_plus
     kwargs:
       rep_head: False
       inner_planes: 256
