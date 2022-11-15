@@ -21,7 +21,7 @@ We divided the dataset into 2, 975 and 500 images for training and validation, r
 - torchvision 0.10.0
 
 ## 3.Train/Test
-**Train a Fully-Supervised Model**
+**Train a Fully-Supervised Model**  
 For instance, we can train a model on PASCAL VOC 2012 with only 1464 labeled data for supervision by:
 ```
 cd experiments/pascal/1464/suponly
