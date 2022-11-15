@@ -8,11 +8,11 @@ We evaluate our experiments on both the classic dataset (1, 464 labeled images w
 2. Refer to this [link](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0) and download PASCAL VOC 2012 augmented with SBD dataset.
 
 - **Cityscapes**  
-The dataset includes 2, 975 and 500 images for training and validation, respectively.  
+We divided the dataset into 2, 975 and 500 images for training and validation, respectively.  
 1. Download "leftImg8bit_trainvaltest.zip" from: [https://www.cityscapes-dataset.com/downloads/](https://www.cityscapes-dataset.com/downloads/)  
 2. Download "gtFine.zip" from: [https://drive.google.com/file/d/10tdElaTscdhojER_Lf7XlytiyAkk7Wlg/view?usp=sharing](https://drive.google.com/file/d/10tdElaTscdhojER_Lf7XlytiyAkk7Wlg/view?usp=sharing)   
   
-**Note that the dataset link is provided by the author of [U2PL](https://github.com/Haochen-Wang409/U2PL)**
+**Note that both of the above dataset link is provided by the author of [U2PL](https://github.com/Haochen-Wang409/U2PL)**
 
 
 ## 2.Enviorments
