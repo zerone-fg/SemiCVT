@@ -1,7 +1,7 @@
 dataset: # Required.
   type: cityscapes
   train:
-    data_root: /apdcephfs/share_1290796/huimin/Data/Cityscape
+    data_root: /apdcephfs/share_1290796/Data/Cityscape
     data_list: ../../../../data/splits/cityscapes/1488/labeled.txt
     flip: True
     GaussianBlur: False
@@ -12,7 +12,7 @@ dataset: # Required.
       size: [769, 769] # crop image with HxW size
       #size: [512, 512] # crop image with HxW size
   val:
-    data_root: /apdcephfs/share_1290796/huimin/Data/Cityscape
+    data_root: /apdcephfs/share_1290796/Data/Cityscape
     data_list: ../../../../data/splits/cityscapes/val.txt
     crop:
       type: center
