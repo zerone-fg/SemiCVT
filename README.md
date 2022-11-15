@@ -17,7 +17,7 @@ Download "gtFine.zip" from: [https://drive.google.com/file/d/10tdElaTscdhojER_Lf
 - torchvision 0.10.0
 
 ## 3.Train/Test
-- Train a Fully-Supervised Model
+Train a Fully-Supervised Model  
 For instance, we can train a model on PASCAL VOC 2012 with only 1464 labeled data for supervision by:
 ```
 cd experiments/pascal/1464/suponly
@@ -36,7 +36,7 @@ sh train.sh <num_gpu> <port>
 # or use slurm
 # sh slurm_train.sh <num_gpu> <port> <partition>
 ```
-- Train a Semi-Supervised Model
+Train a Semi-Supervised Model   
 We can train a model on PASCAL VOC 2012 with 1464 labeled data and 9118 unlabeled data for supervision by:
 ```
 cd experiments/pascal/1464/ours
