@@ -9,7 +9,7 @@ Refer to this [link](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClass
 
 - **Cityscapes**  
 The dataset includes 2, 975 and 500 images for training and validation, respectively.  
-Download "leftImg8bit_trainvaltest.zip" from: [https://www.cityscapes-dataset.com/downloads/](https://www.cityscapes-dataset.com/downloads/)
+Download "leftImg8bit_trainvaltest.zip" from: [https://www.cityscapes-dataset.com/downloads/](https://www.cityscapes-dataset.com/downloads/)  
 Download "gtFine.zip" from: [https://drive.google.com/file/d/10tdElaTscdhojER_Lf7XlytiyAkk7Wlg/view?usp=sharing](https://drive.google.com/file/d/10tdElaTscdhojER_Lf7XlytiyAkk7Wlg/view?usp=sharing)
 ## 2.Enviorments
 - python 3.7
