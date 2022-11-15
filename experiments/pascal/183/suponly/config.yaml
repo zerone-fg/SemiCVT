@@ -1,7 +1,7 @@
 dataset: # Required.
   type: pascal
   train:
-    data_root: /apdcephfs/share_1290796/huimin/Data/VOC/VOCdevkit/VOC2012
+    data_root: /apdcephfs/share_1290796/Data/VOC/VOCdevkit/VOC2012
     data_list: ../../../../data/splits/pascal/183/labeled.txt
     flip: True
     GaussianBlur: False
@@ -11,7 +11,7 @@ dataset: # Required.
       type: rand
       size: [513, 513] # crop image with HxW size
   val:
-    data_root: /apdcephfs/share_1290796/huimin/Data/VOC/VOCdevkit/VOC2012
+    data_root: /apdcephfs/share_1290796/Data/VOC/VOCdevkit/VOC2012
     data_list: ../../../../data/splits/pascal/val.txt
     crop:
       type: center
