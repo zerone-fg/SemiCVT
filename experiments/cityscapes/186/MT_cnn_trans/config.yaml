@@ -1,7 +1,7 @@
 dataset: # Required.
   type: cityscapes_semi
   train:
-    data_root: /apdcephfs/share_1290796/huimin/Data/Cityscape
+    data_root: /apdcephfs/share_1290796/Data/Cityscape
     data_list: ../../../../data/splits/cityscapes/186/labeled.txt
     flip: True
     GaussianBlur: False
@@ -11,7 +11,7 @@ dataset: # Required.
       type: rand
       size: [769, 769] # crop image with HxW size
   val:
-    data_root: /apdcephfs/share_1290796/huimin/Data/Cityscape
+    data_root: /apdcephfs/share_1290796/Data/Cityscape
     data_list: ../../../../data/splits/cityscapes/val.txt
     crop:
       type: center
@@ -73,14 +73,14 @@ net: # Required.
     aux_plane: 1024
     loss_weight: 0.4
   encoder:
-    type: u2pl.models_cnn_trans_1009_cityscape.resnet_pvt_fourier.resnet101
+    type: u2pl.models_cnn_trans.resnet_pvt_fourier.resnet101
     kwargs:
       multi_grid: True
       zero_init_residual: True
       fpn: True
       replace_stride_with_dilation: [False, False, True]  #layer0...1 is fixed, layer2...4
   decoder:
-    type: u2pl.models_cnn_trans_1009_cityscape.decoder.dec_deeplabv3_plus
+    type: u2pl.models_cnn_trans.decoder.dec_deeplabv3_plus
     kwargs:
       inner_planes: 256
       dilations: [12, 24, 36]
