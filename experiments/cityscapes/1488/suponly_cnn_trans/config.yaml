@@ -60,14 +60,14 @@ net: # Required.
     aux_plane: 1024
     loss_weight: 0.4
   encoder:
-    type: u2pl.models_cnn_trans.resnet_pvt_fourier_light.resnet101
+    type: u2pl.model_cnn_trans.resnet_pvt_fourier_light.resnet101
     kwargs:
       multi_grid: True
       zero_init_residual: True
       fpn: True
       replace_stride_with_dilation: [False, False, True]  #layer0...1 is fixed, layer2...4
   decoder:
-    type: u2pl.models_cnn_trans.decoder.dec_deeplabv3_plus
+    type: u2pl.model_cnn_trans.decoder.dec_deeplabv3_plus
     kwargs:
       rep_head: False
       inner_planes: 256
