@@ -3,8 +3,8 @@ The code is for paper: SemiCVT: Semi-Supervised Convolutional Vision Transformer
 ## 1.Dataset
 Experiments are conducted on two public datasets: **Pascal VOC 2012** and **Cityscapes**.
 - **Pascal VOC 2012**  
-We evaluate our experiments on both the classic dataset (1, 464 labeled images with 9, 118 unlabeled images), and the blender dataset (10, 582 labeled images), which contains additional 9118 images that be augmented via adopting coarsely annotated 9, 118 images from the SBD dataset).
-More details about the dataset split and implementation details will be released till acceptance.  
+We evaluate our experiments on both the classic dataset (1, 464 labeled images with 9, 118 unlabeled images), and the blender dataset (10, 582 labeled images), which contains additional 9118 images that be augmented via adopting coarsely annotated 9, 118 images from the SBD dataset).  
+More details about the dataset split and implementation details will be released till acceptance.    
 Refer to this [link](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0) and download PASCAL VOC 2012 augmented with SBD dataset.
 
 - **Cityscapes**  
